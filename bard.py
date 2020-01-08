@@ -111,8 +111,8 @@ class Bard:
         self.check_pipas_collision()
 
     def jump(self):
-        self.pos_y -= 75.
-        self.v_velocity = 0.0
+        # self.pos_y -= 75.
+        self.v_velocity = -10.0
 
     def draw(self):
         pygame.draw.circle(self.surface, self.color, (int(self.pos_x), int(self.pos_y)), int(self.size))
